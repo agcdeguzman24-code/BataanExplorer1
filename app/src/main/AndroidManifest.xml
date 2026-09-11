@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Existing Permissions -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- ADDED: Permissions para sa Alarm at Notifications -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BataanExplorer">
+
+        <!-- ADDED: BroadcastReceiver para mag-fire ang Reminder sa tamang oras -->
+        <receiver
+            android:name=".ReminderReceiver"
+            android:enabled="true"
+            android:exported="false" />
+
+        <activity
+            android:name=".dialogreview"
+            android:exported="false" />
+        <activity
+            android:name=".review"
+            android:exported="false" />
+        <activity
+            android:name=".travelplan5"
+            android:exported="false" />
+        <activity
+            android:name=".explorenearby"
+            android:exported="false" />
+        <activity
+            android:name=".destinationdetails"
+            android:exported="false" />
+        <activity
+            android:name=".profile"
+            android:exported="false" />
+        <activity
+            android:name=".traveldestination"
+            android:exported="false" />
+        <activity
+            android:name=".travelplan2"
+            android:exported="false" />
+        <activity
+            android:name=".travelplan4"
+            android:exported="false" />
+        <activity
+            android:name=".travelplan3"
+            android:exported="false" />
+        <activity
+            android:name=".travelplan1"
+            android:exported="false" />
+        <activity
+            android:name=".processingquiz"
+            android:exported="false" />
+        <activity
+            android:name=".quizintro"
+            android:exported="false" />
+        <activity
+            android:name=".itemquizresults"
+            android:exported="false" />
+        <activity
+            android:name=".quizresults"
+            android:exported="false" />
+        <activity
+            android:name=".itemquiz"
+            android:exported="false" />
+        <activity
+            android:name=".quiz"
+            android:exported="false" />
+        <activity
+            android:name=".search"
+            android:exported="false" />
+        <activity
+            android:name=".home"
+            android:exported="false" />
+        <activity
+            android:name=".setup3"
+            android:exported="false" />
+        <activity
+            android:name=".setupintro"
+            android:exported="false" />
+        <activity
+            android:name=".setup1"
+            android:exported="false" />
+        <activity
+            android:name=".placessetup"
+            android:exported="false" />
+        <activity
+            android:name=".signup"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity android:name=".WelcomeScreen" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

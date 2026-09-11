@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "703838077327",
+    "project_id": "bataan-explorer",
+    "storage_bucket": "bataan-explorer.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:703838077327:android:f2ff9c348cca6983cc0bfa",
+        "android_client_info": {
+          "package_name": "com.example.bataanexplorer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyArmaifUiTN1deXzYudMOOjNHUPR7B__1s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="22dp"
+        android:paddingEnd="22dp"
+        android:paddingTop="40dp"
+        android:paddingBottom="24dp">
+
+        <!-- Title -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Quick Preferences Setup"
+            android:textStyle="bold"
+            android:textColor="#202124"
+            android:textSize="24sp"/>
+
+        <!-- Progress -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="#1565C0"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="#E5E5E5"/>
+
+            <Space
+                android:layout_width="10dp"
+                android:layout_height="1dp"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:layout_weight="1"
+                android:background="#E5E5E5"/>
+
+        </LinearLayout>
+
+        <!-- Step -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="STEP 1 OF 3"
+            android:textStyle="bold"
+            android:textColor="#1565C0"
+            android:textSize="15sp"/>
+
+        <!-- Question -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Which municipalities would you like to explore?"
+            android:textColor="#202124"
+            android:textStyle="bold"
+            android:textSize="20sp"/>
+
+        <!-- Search -->
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            app:boxBackgroundMode="filled"
+            app:boxCornerRadiusBottomEnd="28dp"
+            app:boxCornerRadiusBottomStart="28dp"
+            app:boxCornerRadiusTopEnd="28dp"
+            app:boxCornerRadiusTopStart="28dp"
+            app:boxBackgroundColor="#F8F8F8"
+            app:startIconDrawable="@android:drawable/ic_menu_search"
+            app:startIconTint="#8A8A8A">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Search municipalities..."
+                android:background="@null"
+                android:textSize="17sp"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- Municipalities -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAbucay"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Abucay"
+                android:textAllCaps="false"
+                android:textColor="#202124"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="24dp"
+                app:strokeColor="#D9D9D9"
+                app:strokeWidth="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBagac"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Bagac"
+                android:textAllCaps="false"
+                android:textColor="#202124"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="24dp"
+                app:strokeColor="#D9D9D9"
+                app:strokeWidth="1dp"/>
+
+        </LinearLayout>
+
+        <!-- Row 2 -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBalanga"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Balanga"
+                android:textAllCaps="false"
+                android:textColor="#202124"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="24dp"
+                app:strokeColor="#D9D9D9"
+                app:strokeWidth="1dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnDinalupihan"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Dinalupihan"
+                android:textAllCaps="false"
+                android:textColor="#202124"
+                app:backgroundTint="#FFFFFF"
+                app:cornerRadius="24dp"
+                app:strokeColor="#D9D9D9"
+                app:strokeWidth="1dp"/>
+
+            <!-- Row 3 -->
+        </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnHermosa"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Hermosa"
+                    android:textAllCaps="false"
+                    android:textColor="#202124"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="#D9D9D9"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLimay"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Limay"
+                    android:textAllCaps="false"
+                    android:textColor="#202124"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="#D9D9D9"
+                    app:strokeWidth="1dp"/>
+
+            </LinearLayout>
+
+            <!-- Row 4 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMariveles"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Mariveles"
+                    android:textAllCaps="false"
+                    android:textColor="#202124"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="#D9D9D9"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnMorong"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Morong"
+                    android:textAllCaps="false"
+                    android:textColor="#202124"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="#D9D9D9"
+                    app:strokeWidth="1dp"/>
+
+            </LinearLayout>
+
+            <!-- Row 5 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOrani"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Orani"
+                    android:textAllCaps="false"
+                    android:textColor="#202124"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="#D9D9D9"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnOrion"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Orion"
+                    android:textAllCaps="false"
+                    android:textColor="#202124"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="#D9D9D9"
+                    app:strokeWidth="1dp"/>
+
+            </LinearLayout>
+
+            <!-- Row 6 -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnPilar"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="8dp"
+                    android:text="Pilar"
+                    android:textAllCaps="false"
+                    android:textColor="#202124"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="#D9D9D9"
+                    app:strokeWidth="1dp"/>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnSamal"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="8dp"
+                    android:text="Samal"
+                    android:textAllCaps="false"
+                    android:textColor="#202124"
+                    app:backgroundTint="#FFFFFF"
+                    app:cornerRadius="24dp"
+                    app:strokeColor="#D9D9D9"
+                    app:strokeWidth="1dp"/>
+
+            </LinearLayout>
+        <!-- Buttons -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnBack"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="Back"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#1565C0"
+                app:backgroundTint="#FFFFFF"
+                app:strokeColor="#1565C0"
+                app:strokeWidth="1dp"
+                app:cornerRadius="28dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnNext"
+                android:layout_width="0dp"
+                android:layout_height="56dp"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="Next"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                app:backgroundTint="#1565C0"
+                app:cornerRadius="28dp"/>
+
+        </LinearLayout>
+
+
+        </LinearLayout>
+
+</ScrollView>
